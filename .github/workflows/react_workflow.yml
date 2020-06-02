@@ -19,6 +19,8 @@ jobs:
         run: sudo apt-get update && sudo apt-get install yarn
       - name: Build React App
         run: yarn build
+      - name: Install dependencies
+        run: yarn
       - name: Install Surge
         run: npm install -g surge
       - name: Run surge
